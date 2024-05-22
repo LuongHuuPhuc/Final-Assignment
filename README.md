@@ -16,7 +16,7 @@
 - Xem các remote đã liên kết:
   * `git remote -v`
 - Lệnh push - pull file từ local Repo lên remote Repo và ngược lại:
-  * `git push -u origin <master>` (\<master> là tên nhánh- brach chính của remote Repo)
+  * `git push -u origin <master>` (\<master> là tên nhánh- brach chính của remote Repo) (Ngoài ra sau khi commit file xong thì dùng lệnh này để push lên remote Repo)
   * `git pull -u origin <master>`
 - *Trường hợp là người mới dùng git bash, git bash sẽ yêu cầu cấu hình thông tin cá nhân về Authority như username và email để biết ai là người thực hiện lệnh*
   * `git config --global user.name "Tên bạn"`
