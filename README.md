@@ -6,7 +6,7 @@
 - Xem các remote đã liên kết:
   * `git remote -v`
 - Lệnh push - pull file từ local Repo lên remote Repo và ngược lại:
-  * `git push origin <master>` (<master> là tên nhánh- brach chính của remote Repo)
+  * `git push origin <master>` (\<master> là tên nhánh- brach chính của remote Repo)
   * `git pull origin <master>`
   
 
