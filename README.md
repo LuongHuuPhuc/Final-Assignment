@@ -2,7 +2,7 @@
 *** 
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
 ***
-**Git Bash cơ bản**
+ ## **Git Bash cơ bản** 
 - Tạo mới file git trong máy tính (local Repo):
   * `git init + [tên foler.định dạng]` (lệnh này sẽ tạo 1 foler chứa file ẩn .git)
 - Thêm file vào local Repo:
