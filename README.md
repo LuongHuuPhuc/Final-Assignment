@@ -12,7 +12,7 @@
 - Khi add file vào thì file đã sẵn sàng để commit lên local Repo, khi đó dùng lệnh:
   * `git commit -m + "your commit messenge"`
 - Liên kết, đồng bộ local Repo với remote Repo trên gitHub qua lệnh:
-  * `git remote add origin` ( "Origin là tên mặc định gán cho remote Repo. Thường sử dụng "Origin" cho remote Repo chính.)
+  * `git remote add origin + [URL repo gitHub]` ( "Origin là tên mặc định gán cho remote Repo. Thường sử dụng "Origin" cho remote Repo chính.)
 - Xem các remote đã liên kết:
   * `git remote -v`
 - Lệnh push - pull file từ local Repo lên remote Repo và ngược lại:
