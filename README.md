@@ -2,8 +2,7 @@
 *** 
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
 
-```
-php
+```php
 std::cout << 教師を管理するシステム << std::endl;
 ```
 ***
