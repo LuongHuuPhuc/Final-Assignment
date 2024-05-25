@@ -33,5 +33,7 @@
 - Khi muốn bỏ thay đổi trong local Repo (như add file):
   * `git restore`
 - Kiểm tra lịch sử commit trong local Repo:
-  * `git log` 
+  * `git log`
+- Cách chuyển về file đằng trước/ ra ngoài file:
+  * `cd..` hoặc `pwd`
     
