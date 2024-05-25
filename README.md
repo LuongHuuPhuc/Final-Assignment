@@ -31,7 +31,7 @@
   * Các file chưa được theo dõi (file mới chưa được thêm vào hệ thống quản lý phiên bản).
   * Dùng lệnh: `git Status`
 - Khi muốn bỏ thay đổi trong local Repo (như add file):
-  * `git restore`
+  * `git restore --staged + [Tên file]`
 - Kiểm tra lịch sử commit trong local Repo:
   * `git log`
 - Cách chuyển về file đằng trước/ ra ngoài file:
