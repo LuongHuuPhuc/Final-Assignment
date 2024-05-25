@@ -3,7 +3,7 @@
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
 
 ```cpp bash
-std::cout << "教師を管理するシステム" << std::endl;
+std::cout << "教師の授業割り当て管理システム" << std::endl;
 ``` 
 ***
  ## **Git Bash cơ bản** 
