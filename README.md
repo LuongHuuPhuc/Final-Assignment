@@ -2,7 +2,7 @@
 *** 
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
 
-```bash 
+```cpp bash
 std::cout << "教師を管理するシステム" << std::endl;
 ``` 
 ***
