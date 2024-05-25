@@ -1,7 +1,11 @@
 # **Final Assignment**
 *** 
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
-**教師を管理するシステム**
+echo 
+```
+**教師を管理するシステム** 
+php
+```
 ***
  ## **Git Bash cơ bản** 
 - Tạo mới file git trong máy tính (local Repo):
