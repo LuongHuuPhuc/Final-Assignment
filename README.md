@@ -2,9 +2,9 @@
 *** 
 *Hệ Thống Quản Lý Phân Công Giảng Dạy Cho Giáo Viên*
 
-```cpp 
-std::cout << 教師を管理するシステム << std::endl;
-```
+```bash 
+std::cout << "教師を管理するシステム" << std::endl;
+``` 
 ***
  ## **Git Bash cơ bản** 
 - Tạo mới file git trong máy tính (local Repo):
