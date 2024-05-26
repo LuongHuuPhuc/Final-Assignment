@@ -4,5 +4,4 @@ using namespace std;
 class Teacher {
 	
 };
-
-
+ 
