@@ -40,4 +40,6 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   * `git log`
 - Cách chuyển về file đằng trước/ ra ngoài file:
   * `cd..` hoặc `pwd`
+- Clone tất cả các file từ gitHub về máy:
+  * `git clone + [URL gitHub]`
     
