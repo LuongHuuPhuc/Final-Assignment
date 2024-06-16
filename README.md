@@ -36,10 +36,17 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   * Dùng lệnh: `git Status`
 - Khi muốn bỏ thay đổi trong local Repo (như add file):
   * `git restore --staged + [Tên file]`
+  * `git checkout -- [file]` (Hủy các thay đổi chưa được commit)
 - Kiểm tra lịch sử commit trong local Repo:
   * `git log`
 - Cách chuyển về file đằng trước/ ra ngoài file:
   * `cd..` hoặc `pwd`
 - Clone tất cả các file từ gitHub về máy:
   * `git clone + [URL gitHub]`
-    
+- Chuyển đổi giữa các nhánh/ brach trong Repo:
+  * `git checkout + [branch]`
+    > Ví dụ: muốn hợp nhất 'master' về 'main', trước đó hãy chuyển về nhánh 'main'
+    > `git checkout main`
+- Hợp nhất 2 nhánh với nhau:
+  * `git merge + [tên nhánh gộm]`
+    > Ví dụ: gộp nhánh 'master' vào 'main': `git merge master`    
