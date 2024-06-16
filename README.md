@@ -20,8 +20,8 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Xem các remote đã liên kết:
   * `git remote -v`
 - Lệnh push - pull file từ local Repo lên remote Repo và ngược lại:
-  * `git push -u origin <master>` (\<master> là tên nhánh- brach chính của remote Repo) (Ngoài ra sau khi commit file xong thì dùng lệnh này để push lên remote Repo)
-  * `git pull -u origin <master>`
+  * `git push origin <master>` (\<master> là tên nhánh- brach chính của remote Repo) (Ngoài ra sau khi commit file xong thì dùng lệnh này để push lên remote Repo)
+  * `git pull origin <master>`
 - *Trường hợp là người mới dùng git bash, git bash sẽ yêu cầu cấu hình thông tin cá nhân về Authority như username và email để biết ai là người thực hiện lệnh*
   * `git config --global user.name "Tên bạn"`
   *  `git config --global user.mail "Tên mail"`
@@ -46,10 +46,20 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
     > Xóa xong nhớ dùng lệnh `git commit -m` để xác nhận và `git push` để up lại lên remote Repo
 - Clone tất cả các file từ gitHub về máy:
   * `git clone + [URL gitHub]`
-- Chuyển đổi giữa các nhánh/ brach trong Repo:
+*** 
+## **Hợp nhất các Branch lại với nhau** ##
+1. Trước khi chuyển đổi luôn kiểm tra 2 nhánh bằng `git checkout + [Nhánh]` và `git pull origin + [Nhánh]` để đảm bảo chúng được cập nhật mới nhất từ Remote repo.
+2. Chuyển đổi giữa các nhánh/ brach trong Repo:
   * `git checkout + [branch]`
     > Ví dụ: muốn hợp nhất 'master' về 'main', trước đó hãy chuyển về nhánh 'main'
     > `git checkout main`
-- Hợp nhất 2 nhánh với nhau:
+3. Hợp nhất 2 nhánh với nhau:
   * `git merge + [tên nhánh gộm]`
-    > Ví dụ: gộp nhánh 'master' vào 'main': `git merge master`    
+    > Ví dụ: gộp nhánh 'master' vào 'main': `git merge master`
+> Giải quyết xung đột (Nếu có):
+  * Trong quá trình hợp nhất, có thể xảy ra xung đột nếu cùng một phần của cùng một tệp được thay đổi khác nhau trong cả hai nhánh. Git sẽ thông báo cho bạn biết tệp nào gặp xung đột và yêu cầu bạn giải quyết, khi đó cần dùng lệnh `git add + [Tên file xung đột]` + `git commit -m ".."` để update lại file.
+4. Sau đó push lên Remote repo bằng lệnh: `git push origin + [Nhánh hợp nhất]`
+### Lưu ý: thông thường 2 nhánh khác nhau vì không chung lịch sử commit nên thường hiện ra lỗi: "fatal: refusing to merge unrelated histories" ###
+***Cách giải quyết:***
+- Dùng lệnh: `git merge + [Nhánh hợp nhất] --allow-unrelated-histories` để bỏ qua các lịch sử commit không liên quan.
+
