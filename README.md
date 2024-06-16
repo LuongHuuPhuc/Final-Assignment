@@ -41,6 +41,9 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   * `git log`
 - Cách chuyển về file đằng trước/ ra ngoài file:
   * `cd..` hoặc `pwd`
+- Cách xóa file trong Remote Repo từ git bash:
+  * `git rm + [Tên file]`
+    > Xóa xong nhớ dùng lệnh `git commit -m` để xác nhận và `git push` để up lại lên remote Repo
 - Clone tất cả các file từ gitHub về máy:
   * `git clone + [URL gitHub]`
 - Chuyển đổi giữa các nhánh/ brach trong Repo:
