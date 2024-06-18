@@ -46,6 +46,9 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
     > Xóa xong nhớ dùng lệnh `git commit -m` để xác nhận và `git push` để up lại lên remote Repo
 - Clone tất cả các file từ gitHub về máy:
   * `git clone + [URL gitHub]`
+- Check sự khác nhau 2 lần commit:
+  * `git diff commit1 commit2` trong đó commit1 và commit2 là 2 hash của commit mà ta cần so sánh. Nếu muốn kiểm tra trong 1 file cụ thể: `git diff commit1 commit2 -- file.txt`
+  * Kiểm tra sự khác nhau giữa commit hiện tại và commit trước đó: `git diff HEAD^ `
 *** 
 ## **Hợp nhất các Branch lại với nhau** ##
 1. Trước khi chuyển đổi luôn kiểm tra 2 nhánh bằng `git checkout + [Nhánh]` và `git pull origin + [Nhánh]` để đảm bảo chúng được cập nhật mới nhất từ Remote repo.
