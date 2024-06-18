@@ -114,9 +114,9 @@ class Teacher_Class{
 
 		//Ham luu du lieu moi vao file
 		void savetoFile(){
-			ofstream file1(filePath1,ios::app);		//Them vao cuoi file ios::app
+			ofstream file1(filePath1,ios::app); //Them vao cuoi file ios::app
 			/* ofstream file1;
-				 file1.open(filePath1); */
+		           file1.open(filePath1); */
 			cout << "Vui long nhap thong tin Giang Vien can luu vao file: " ;
 			file1 << teacher.size() << endl;
 			for(int i=0; i< teacher.size(); i++) {
@@ -128,7 +128,7 @@ class Teacher_Class{
 
 			ofstream file2(filePath2, ios::app);
 			/* ofstream file2;
-				 file2.open(filePath2); */
+			   file2.open(filePath2); */
 			cout << "Vui long nhap thong tin Lop Hoc can luu vao file: " ;
 			file2 << lophoc.size() << endl;
 			for(int i=0; i< lophoc.size(); i++){
