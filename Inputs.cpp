@@ -98,7 +98,9 @@ class Teacher_Class{
 		//Hien thi thong tin file
 		void displayTeacher(){
 			cout << "Danh sach Giang Vien: " << "\n";
-			for(int i=0; i< teacher.size(); i++){
+			//for(size_t i = 00; i < teacher.size(); i++){} 
+			//size_t là kiểu dữ liệu không âm dùng để biểu diễn các tham số liên quan kích thước, số lượng của đối tượng trong bộ nhớ 
+			for(int i=0; i< teacher.size(); i++){ 
 				cout << "Ten Giang Vien: " << teacher[i].name << "\t" << "Hoc Vi: " << teacher[i].hocVi << endl; 
 			}
 		}
