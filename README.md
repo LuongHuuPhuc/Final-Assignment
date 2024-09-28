@@ -66,7 +66,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 ***Cách giải quyết:***
 - Dùng lệnh: `git merge + [Nhánh hợp nhất] --allow-unrelated-histories` để bỏ qua các lịch sử commit không liên quan.
 
-### File .gitignore ###
+### **File .gitignore** ###
 * Đây là một file giúp bạn bỏ qua các file hay thư mục mà bạn không muốn push lên github
 **Tạo file .gitignore trên gitBash**
   1. Mở terminal hay gitBash lên, sau đó dùng lệnh `touch` + tên file, ở dây là .gitignore để tạo file
