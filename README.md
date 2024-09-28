@@ -65,7 +65,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 ### Lưu ý: thông thường 2 nhánh khác nhau vì không chung lịch sử commit nên thường hiện ra lỗi: "fatal: refusing to merge unrelated histories" ###
 ***Cách giải quyết:***
 - Dùng lệnh: `git merge + [Nhánh hợp nhất] --allow-unrelated-histories` để bỏ qua các lịch sử commit không liên quan.
-
+***
 ### **File .gitignore** ###
 * Đây là một file giúp bạn bỏ qua các file hay thư mục mà bạn không muốn push lên github
 **Tạo file .gitignore trên gitBash**
