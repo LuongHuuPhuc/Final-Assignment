@@ -34,6 +34,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   * Các thay đổi chưa staged (đã thay đổi nhưng chưa được thêm vào staging area).
   * Các file chưa được theo dõi (file mới chưa được thêm vào hệ thống quản lý phiên bản).
   * Dùng lệnh: `git status`
+    > Sau khi sửa bất cứ gì bên trong local Repo thì nên kiểm tra lại bằng lệnh trên !
 - Khi muốn bỏ thay đổi trong local Repo (như add file):
   * `git restore --staged + [Tên file]`
   * `git checkout -- [file]` (Hủy các thay đổi chưa được commit)
