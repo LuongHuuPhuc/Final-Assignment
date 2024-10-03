@@ -71,6 +71,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Tạo Branch mới: `git branch + tên branch`
 - Xóa Branch `git branch -d + tên branch`
 - Đổi tên nhánh `git branch -m (branch cũ) (branch mới)`
+- Kiểm tra tất cả branch trên local và remote: `git branch -a`
 ## **Xóa branch bất kỳ bằng git bash** ##
 * Trước tiên phải chắc chắn rằng bạn đang không ở branch mà bạn muốn xóa, trước hết hãy chuyển sang 1 branch khác bằng lệnh `git checkout + branch`
 * Sau đó để xóa branch ra khỏi local Repo, dùng lệnh: `git branch -d + [tên Branch]`. **-D** thay vì **-d** nếu nhánh chưa được hợp nhất.
