@@ -83,4 +83,9 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   > Muốn bỏ qua file thì gõ `*`+ .định_dạng, bỏ qua folder thì `tên_folder` + "/"
 * Bạn cần thêm và commit file .gitignore vào remote Repo của mình:
   `git add .gitignore`
-  `git commit -m` + "Text" 
+  `git commit -m` + "Text"
+  ## **Lưu Ý** ##
+  * `git checkout <branch>` chỉ chuyển bạn sang branch đã có trong local repository, và không tự động cập nhật nội dung từ remote (nội dung cũ và nó là local repo)
+  * Nếu bạn muốn cập nhật branch local từ remote repository, bạn cần chạy lệnh `git pull` sau khi checkout.
+  * Nếu chưa cập nhật (pull), bạn sẽ chỉ thấy các file và nội dung từ lần cuối bạn làm việc với local branch.
+ 
