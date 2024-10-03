@@ -1,3 +1,4 @@
-main.exe
-Function.exe
+build/
+*.exe
+* .un~
 
