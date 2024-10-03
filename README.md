@@ -66,6 +66,11 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 ***Cách giải quyết:***
 - Dùng lệnh: `git merge + [Nhánh hợp nhất] --allow-unrelated-histories` để bỏ qua các lịch sử commit không liên quan.
 ***
+## **Xóa branch bất kỳ bằng git bash** ##
+* Trước tiên phải chắc chắn rằng bạn đang không ở branch mà bạn muốn xóa, trước hết hãy chuyển sang 1 branch khác bằng lệnh `git checkout + branch`
+* Sau đó để xóa branch ra khỏi local Repo, dùng lệnh: `git branch -d + [tên Branch]`. **-D** thay vì **-d** nếu nhánh chưa được hợp nhất.
+* Xóa nhánh từ remote Repo (gitHub): Bạn cần đẩy lệnh xóa nhánh lên bằng lệnh:  `git push origin --delete + [tên Branch]
+
 ### **File .gitignore** ###
 * Đây là một file giúp bạn bỏ qua các file hay thư mục mà bạn không muốn push lên github
 **Tạo file .gitignore trên gitBash**
