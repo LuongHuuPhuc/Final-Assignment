@@ -22,6 +22,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Lệnh push - pull file từ local Repo lên remote Repo và ngược lại:
   * `git push origin <master>` (\<master> là tên nhánh- brach chính của remote Repo) (Ngoài ra sau khi commit file xong thì dùng lệnh này để push lên remote Repo)
   * `git pull origin <master>`
+   > *Nếu trong trường hợp xảy ra lỗi khi push mà bạn vẫn muốn push lên thì tất cả dữ liệu trên remote sẽ bị ghi đè bằng dữ liệu ở local: `git push --force origin main`
 - *Trường hợp là người mới dùng git bash, git bash sẽ yêu cầu cấu hình thông tin cá nhân về Authority như username và email để biết ai là người thực hiện lệnh*
   * `git config --global user.name "Tên bạn"`
   *  `git config --global user.mail "Tên mail"`
