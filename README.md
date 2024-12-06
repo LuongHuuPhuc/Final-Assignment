@@ -90,7 +90,18 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   ***
   Có trường hợp xảy ra là, khi bạn viết xong kiểu file bạn không muốn push lên trong file `.gitignore` nhưng sau khi push lên thì kiểu file đó vẫn hiện lên remote thì phải làm sao ?
   * Lý do: Nếu kiểu file đó đã từng được theo dõi bởi Git (đã `git add` hoặc commit trước), Git sẽ tiếp tục theo dõi file đó ngay cả khi bạn thêm nó vào `.gitginore`.
-  
+  * `.gitignore` chỉ áp dụng cho file nào chưa được theo dõi (untracked files), file mới  chưa được thêm vào trước
+  * Nếu file đã được theo dõi và có trong remote trước đó, bạn phải dung lệnh `git rm --cached + [* .định_dạng/file]/[tên_folder/]` để:
+    1. Loại bỏ file ra khỏi vùng theo dõi Git (index)
+    2. Giữ lại file trên máy (nếu không có `--cached` thì file sẽ bị xóa cả ở index lần thư mục local
+   * Sau khi dùng `git rm --cached`, Git sẽ:
+    1. Ngừng theo dõi file
+    2. `.gitignore` sẽ có hiệu lực, ngăn file này bị theo dõi hoặc push lên lần sau
+* Quy trình đúng khi sử dụng `.gitignore`:
+  1. Xác định các file không muốn push nó lên và thêm chúng vào `.gitignore`
+  2. Ngừng theo dõi các file đã bị theo dõi (nếu có): `git rm --cached`
+  3. Commit các thay đổi
+  4. Push lên remote 
   ***
   ## **Lưu Ý** ##
   * `git checkout <branch>` chỉ chuyển bạn sang branch đã có trong local repository, và không tự động cập nhật nội dung từ remote (nội dung cũ và nó là local repo)
