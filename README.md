@@ -87,6 +87,11 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 * Bạn cần thêm và commit file .gitignore vào remote Repo của mình:
   `git add .gitignore`
   `git commit -m` + "Text"
+  ***
+  Có trường hợp xảy ra là, khi bạn viết xong kiểu file bạn không muốn push lên trong file `.gitignore` nhưng sau khi push lên thì kiểu file đó vẫn hiện lên remote thì phải làm sao ?
+  -> Lý do: Nếu kiểu file đó đã từng được theo dõi bởi Git (đã `git add` hoặc commit trước), Git sẽ tiếp tục theo dõi file đó ngay cả khi bạn thêm nó vào `.gitginore`.
+  
+  ***
   ## **Lưu Ý** ##
   * `git checkout <branch>` chỉ chuyển bạn sang branch đã có trong local repository, và không tự động cập nhật nội dung từ remote (nội dung cũ và nó là local repo)
   * Nếu bạn muốn cập nhật branch local từ remote repository, bạn cần chạy lệnh `git pull` sau khi checkout.
