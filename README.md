@@ -75,6 +75,24 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Xóa Branch `git branch -d + tên branch`
 - Đổi tên nhánh `git branch -m (branch cũ) (branch mới)`
 - Kiểm tra tất cả branch trên local và remote: `git branch -a`
+***
+#### Nếu bạn đã remove remote cũ và liên kết với một local repo mới, nhưng trên remote repository vẫn hiển thị các file và folder cũ, thì vấn đề là remote repository vẫn lưu trạng thái trước đó. Để giải quyết, bạn cần đồng bộ hóa lại local repo mới với remote repo ####
+- Các bước:
+  1.　Xóa toàn bộ nội dung cx trên remote repo
+  ```
+  git rm -r --cached .
+  git commit -m "Xoa toan bo file tu remote repo"
+  git push origin <branch_name>
+  ```
+  2. Đồng bộ nội dung từ local repo mới
+     - Đảm bảo mọi file và folder trong local repo đã được thêm vào staging area
+       ```
+       git add .
+       git commit -m "Them tat ca file tu local repo"
+       ```
+     - Push lên remote repo: `git push -u origin <branch_name>
+  3. Xác minh nội dung trên remote repo. Nếu vẫn còn vấn đề, bạn có thể thử force push: `git push --force origin <branch_name>`
+***
 ## **Xóa branch bất kỳ bằng git bash** ##
 * Trước tiên phải chắc chắn rằng bạn đang không ở branch mà bạn muốn xóa, trước hết hãy chuyển sang 1 branch khác bằng lệnh `git checkout + branch`
 * Sau đó để xóa branch ra khỏi local Repo, dùng lệnh: `git branch -d + [tên Branch]`. **-D** thay vì **-d** nếu nhánh chưa được hợp nhất.
