@@ -77,6 +77,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Kiểm tra tất cả branch trên local và remote: `git branch -a`
 ***
 #### Nếu bạn đã remove remote cũ và liên kết với một local repo mới, nhưng trên remote repository vẫn hiển thị các file và folder cũ, thì vấn đề là remote repository vẫn lưu trạng thái trước đó. Để giải quyết, bạn cần đồng bộ hóa lại local repo mới với remote repo ####
+Các bước: 
   1.　Xóa toàn bộ nội dung cx trên remote repo
       ```
       git rm -r --cached .
