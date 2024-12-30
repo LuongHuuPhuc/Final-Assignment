@@ -102,7 +102,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 **Tạo file .gitignore trên gitBash**
   1. Mở terminal hay gitBash lên, sau đó dùng lệnh `touch` + tên file, ở dây là .gitignore để tạo file
   2. Mở file .gitignore để chỉnh sửa bằng cú pháp `nano` + tên file
-  > Muốn bỏ qua file thì gõ `*`+ .định_dạng, bỏ qua folder thì `tên_folder` + "/"
+  > Muốn bỏ qua file thì gõ `*`+ .định_dạng, bỏ qua folder thì `tên_folder` + "/" hoặc `**/tên_folder/`.
 * Bạn cần thêm và commit file .gitignore vào remote Repo của mình:
   `git add .gitignore`
   `git commit -m` + "Text"
