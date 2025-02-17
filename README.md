@@ -17,6 +17,8 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
   * `git commit -m + "your commit messenge"`
 - Liên kết, đồng bộ local Repo với remote Repo trên gitHub qua lệnh:
   * `git remote add origin + [URL repo gitHub]` ( "Origin là tên mặc định gán cho remote Repo. Thường sử dụng "Origin" cho remote Repo chính.)
+- Set lại link URL, dùng lệnh:
+  * `git remote set-url origin + [URL repo gitHub]`
 - Xóa liên kết với remote Repo:
   * `git remote remove origin` hoặc `git remote rm origin`
 - Xem các remote đã liên kết:
