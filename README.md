@@ -55,6 +55,29 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Check sự khác nhau 2 lần commit:
   * `git diff commit1 commit2` trong đó commit1 và commit2 là 2 hash của commit mà ta cần so sánh. Nếu muốn kiểm tra trong 1 file cụ thể: `git diff commit1 commit2 -- file.txt`
   * Kiểm tra sự khác nhau giữa commit hiện tại và commit trước đó: `git diff HEAD^`
+  * Update những cập mới nhất từ remote nhưng không merge vào nhánh hiện tại (chỉ tải về commit mới, branch mới, tag mới từ remote): `git fetch origin/upstream`
+    - Dùng khi có repo của người khác nhưng bạn muốn thay đổi cũng như đồng nhất thông tin.
+    - Ví dụ:
+   
+      Trước khi fetch: 
+      ```less
+      Local main:    A -- B
+      Origin/main:   A -- B
+      ```
+      Trên Github có thêm commit C:
+      ```less
+      Remote (GitHub): A -- B -- C
+      ```
+      Khi chạy `git fetch`
+      ```less
+      Local main:      A -- B       (không đổi)
+      Origin/main:     A -- B -- C  (cập nhật mới từ GitHub)
+      ```
+
+      -> Đơn giản nó chỉ cho local repo biết remote có gì mới, chứ không động gì tới code của bạn
+   
+   * Khi bạn muốn cập nhật code local theo remote luôn thì: `git merge origin` hoặc nhanh gọn hơn thì `pull` về luôn vì `pull` = `fetch` + `merge`, khi đó local repo của bạn sẽ thay đổi theo những gì remote repo đã thay đổi
+
 *** 
 ## **Hợp nhất các Branch lại với nhau** ##
 1. Trước khi chuyển đổi luôn kiểm tra 2 nhánh bằng `git checkout + [Nhánh]` và `git pull origin + [Nhánh]` để đảm bảo chúng được cập nhật mới nhất từ Remote repo.
