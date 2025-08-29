@@ -55,6 +55,7 @@ std::cout << "教師の授業割り当て管理システム" << std::endl;
 - Check sự khác nhau 2 lần commit:
   * `git diff commit1 commit2` trong đó commit1 và commit2 là 2 hash của commit mà ta cần so sánh. Nếu muốn kiểm tra trong 1 file cụ thể: `git diff commit1 commit2 -- file.txt`
   * Kiểm tra sự khác nhau giữa commit hiện tại và commit trước đó: `git diff HEAD^`
+ 
   - Update những cập mới nhất từ remote nhưng không merge vào nhánh hiện tại (chỉ tải về commit mới, branch mới, tag mới từ remote): `git fetch origin/upstream`
     * Dùng khi có repo của người khác nhưng bạn muốn thay đổi cũng như đồng nhất thông tin.
     * Ví dụ:
